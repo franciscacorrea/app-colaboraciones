@@ -1,0 +1,29 @@
+<ion-content class="login-content" fullscreen>
+
+  <div class="background-overlay"></div>
+
+  <div class="login-card">
+
+    <h2 class="login-title">Bienvenido</h2>
+    <p class="login-subtitle">Iniciá sesión para comenzar</p>
+
+    <ion-item class="login-item">
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+    </ion-item>
+
+    <ion-item class="login-item">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="login-button" (click)="login()">Ingresar</ion-button>
+
+    <div class="footer-text">
+      ¿No tenés cuenta?
+      <a href="#">Registrate</a>
+    </div>
+
+  </div>
+
+</ion-content>
